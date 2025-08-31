@@ -1,0 +1,120 @@
+{
+    "IEM24_front_suspension":{
+        "information":{
+            "authors":"Illini Electric Motorsports",
+            "name":"IEM24 Front Suspension",
+            "value": 69
+        },
+        "slotType":"FSAE_front_suspension",
+        "slots":[
+            ["type", "default","description"],
+            ["FSAE_steering", "IEM_24_steering_parallel","Murphy steering geometry, as ran"],
+            ["FSAE_damper_package","IEM_24_front_damper_package","Murphy front dampers, as ran"],
+        ],
+        //maybe flexbody here later when I have model
+        "nodes":[
+            ["id","posX","posY","posZ"],
+            {"collision":true},
+            {"selfCollision":"|NM_METAL"},
+            {"frictionCoef":0.5},
+
+            {"nodeWeight":0.50},
+            {"group":["steering"]},
+            ["src", 0,-1.5808344, 0.1354],
+            ["srl", -0.21706, -1.5808344, 0.1354],
+            ["srr", 0.21706,-1.5808344, 0.1354],
+            {"group":["fl_inboards"]},
+            ["fluf", -0.2575496, -1.6256, 0.2669053], // "front left upper fore"
+            ["flua", -0.2676152, -1.4478,  0.2826173], // "front left upper aft"
+            ["fllf", -0.2180240, -1.63195,  0.1027798], // lower
+            ["flla", -0.2428573, -1.46685,  0.1231737], // these are in SAE coordinates system, need to change to BeamNG with front being -y, top being +z and right being +x
+            ["flsi", -0.18288, -1.5808344, 0.1354],
+
+            {"group":["fr_inboards"]},
+            ["fruf", 0.2575496, -1.6256, 0.2669053],
+            ["frua", 0.2676152, -1.4478,  0.2826173],
+            ["frlf", 0.2180240, -1.63195,  0.1027798],
+            ["frla", 0.2428573, -1.46685,  0.1231737],
+            ["frsi", 0.18288, -1.5808344, 0.1354], // front right steering inboard
+
+            {"nodeWeight":1}, //make this realistic, need to be control arm weight
+            {"group":["fl_outboards"]}
+            ["flubj", -0.5680024, -1.5095414, 0.2966720],
+            ["fllbj", -0.5926809, -1.5242942, 0.10922],
+            ["flso", -0.5897048, -1.5862114, 0.1318260],
+            ["flwc", -0.6223, -1.53035, 0.2032],
+            ["flpro", -0.498152, -1.50954, 0.316992],
+
+            {"group":["fr_outboards"]}
+            ["frubj", 0.5680024, -1.5095414, 0.2966720],
+            ["frlbj", 0.5926809, -1.5242942, 0.10922],
+            ["frso", 0.5897048, -1.5862114, 0.1318260], // "front right steering outboard"
+            ["frwc", 0.6223, -1.53035, 0.2032],
+            ["frpro", 0.498152, -1.50954, 0.316992],
+        ],
+
+        "beams":[
+            ["id1:","id2:"],
+            {"beamType":"|NORMAL"},
+            {"beamSpring":13341244.000000,"beamDamp":444.648834}, //ripped from tesla, need to make real
+            //upright beams
+            //enter breakstrength here
+            {"breakGroup":"fl_upright"},
+            ["flubj", "flwc"],
+            ["fllbj", "flwc"],
+            ["flso", "flwc"],
+            ["flso","flubj"],
+            ["flso","fllbj"],
+            {"breakGroup":"fr_upright"}
+            ["frubj", "frwc"],
+            ["frlbj", "frwc"],
+            ["frso", "frwc"],
+            ["frso", "frubj"],
+            ["frso", "frlbj"],
+
+
+
+            //A-arms
+            {"beamSpring":6500000, "beamDamp":100},
+            //front left upper
+            ["flubj", "flua"],
+            ["flubj", "fluf"],
+            ["flpro", "flubj"],
+            ["flpro", "flua"],
+            ["flpro", "fluf"],
+            //front right upper
+            ["frubj", "frua"],
+            ["frubj", "fruf"],
+            ["frpro", "frubj"],
+            ["frpro", "frua"],
+            ["frpro", "fruf"],
+            //front left lower
+            ["fllbj", "flla"],
+            ["fllbj","fllf"],
+            //front right lower
+            ["frlbj", "frla"],
+            ["frlbj", "frlf"],
+
+            //steering links
+            ["flso", "flsi"],
+            ["frso", "frsi"],
+            ["frsi", "flsi"],
+
+        ]
+
+        "rails":{
+            "steering_rack":{"links:":["srl","srr"],"looped":false, "capped":true}
+        },
+        "slidenodes":[
+            ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],
+            //the steering rack slides on these nodes
+            ["flsi", "steeringrack", true, true, 0.0, 17787732.000000, "FLT_MAX", "FLT_MAX"],
+            ["frsi", "steeringrack", true, true, 0.0, 17787732.000000, "FLT_MAX", "FLT_MAX"],
+        ],
+        "hydros":[
+            ["id1","id2"],
+            {"beamSpring":13341244, "beamDamp": 10},
+            ["src","srl", {"steeringWheelLock":130,"factor":1.18689851,"outLimit":1.18689851, "inLimit":0.813101487}]
+        ]
+    }
+}
