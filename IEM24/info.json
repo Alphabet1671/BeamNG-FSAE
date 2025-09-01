@@ -1,0 +1,23 @@
+{
+    "Author":"Illini Electric Motorsports",
+    "Brand":"FSAE",
+    "Country":"China",
+    "Derby Class":"FSAE",
+    "Name":"IEM24 - Murphy",
+    "Type":"FSAE",
+    "Body Style": "FSAE",
+    "defaultPaintName1":"defaultPaintName1",
+    "default_pc":"default_pc",
+    "colors":{
+        "White": "1 1 1 1.524",
+        "Charcoal": "0.191 0.191 0.191 1.536",
+        "Black": "0.106 0.108 0.109 1.645",
+        "Classic Green": "0.000 0.258 0.1451 1.552",
+        "Yellow": "0.949 0.625 0.0263 1.552",
+        "Orange": "0.83323 0.465697 0.0507703 1.524",
+        "Red": "1 0 0 1.8",
+        "Dark Blue": "0.034 0.233 0.561 1.404",
+        "Light Blue": "0.236 0.495 0.967 1.723",
+        "Bright Green": "0.0198987 0.766101 0.0298481 1.7",
+    }
+}

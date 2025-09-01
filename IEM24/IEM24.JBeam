@@ -1,0 +1,10 @@
+{
+    "IEM24":{
+        "slotType":"main",
+        "slots":[
+            ["type","default","description"],
+            ["FSAE_chassis", "IEM24_chassis","Murphy Coque"],
+            
+        ]
+    }
+}

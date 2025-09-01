@@ -1,0 +1,456 @@
+{
+    "IEM24_chassis":{
+        "information":{
+            "authors":"Illini Electric Motorsports",
+            "name":"IEM24 Chassis",
+            "value":69,
+        },
+        "slotType":"FSAE_chassis",
+        "slots":[
+            ["type","default","description"],
+            // ["FSAE_front_suspension","IEM24_front_suspension","Murphy front suspension, as ran"],
+            // ["FSAE_rear_suspension","IEM24_rear_susppension","Murphy rear suspension, as ran"],
+            // ["FSAE_aero_package", "IEM24_aero_package","Murphy aero, as ran"],
+            // think about this later, want drivetrain here or somewhere else?
+        ],
+        "nodes":[
+            ["id","posX""posY","posZ"],
+            {"collision": true},
+            {"frictionCoef":0.3},
+
+            {"nodeWeight":0.5},
+            {"group":["left"]},
+            //front bulkhead
+            ["fbh1l",0.144756378,-2.1544788,0.52572666],
+            ["fbh2l",0.18826353,-2.1544788,0.4680077],
+            ["fbh3l",0.19309461,-2.1544788,0.3302],
+            ["fbh4l",0.185731404,-2.1544788,0.120162574],
+            ["fbh5l",0.15324963,-2.1544788,0.0876808],
+            //front hoop brace
+            ["fhb1l",0.182687214,-1.5113,0.5470144],
+            ["fhb2l",0.242226084,-1.5113,0.46800262],
+            ["fhb3l",0.247038368,-1.5113,0.3302],
+            ["fhb4l",0.240844324,-1.5113,0.152830276],
+            ["fhb5l",0.175695102,-1.5113,0.0876808],
+            //front hoop
+            ["fh1l",0.095866712,-1.23825,0.6622288],
+            ["fh2l",0.242226084,-1.23825,0.46800262],
+            ["fh3l",0.247495822,-1.23825,0.3302],
+            ["fh4l",0.241112548,-1.23825,0.14740636],
+            ["fh5l",0.178324256,-1.23825,0.0876808],
+            //side impact structure front
+            ["sisf1l", 0.274648, -1.016, 0.4318],
+            ["sisf2l",0.2782316,-1.016,0.3302],
+            ["sisf3l",0.27051762,-1.016,0.11146917],
+            ["sisf4l",0.194134994,-1.016,0.0368808],
+            //side impact structure rear
+            ["sisr1l",0.32509714,-0.6604,0.4318],
+            ["sisr2l",0.32864552,-0.6604,0.3302],
+            ["sisr3l",0.3184017,-0.6604,0.0368808],
+            //main hoop attachment front
+            ["mha1l",0.26159714,-0.5207,0.4318],
+            ["mha2l",0.26514552,-0.5207,0.3302],
+            ["mha3l",0.25512014,-0.5207,0.043127676],
+            //accumulator protection front
+            ["apf1l",0.237107222,-0.3937,0.5470144],
+            ["apf2l",0.26159714,-0.3937,0.4318],
+            ["apf3l",0.26514552,-0.3937,0.3302],
+            //accumulator protection rear
+            ["apr1l",0.237689136,-0.06604,0.5470144],
+            ["apr2l",0.26148284,-0.06604,0.43507406],
+            ["apr3l",0.26514552,-0.06604,0.3302],
+            //rear bulkhead brace
+            ["rbhb1l",0.26200862,-0.02794,0.4200144],
+            ["rbhb2l",0.26514552,-0.02794,0.3302],
+            //rear bulkhead
+            ["rbh1l",0.26200862,0.2032,0.4200144],
+            ["rbh2l",0.26514552,0.2032,0.3302],
+            ["rbh3l",0.25710896,0.2032,0.100099876],
+
+            {"group":["right"]},
+            //front bulkhead
+            ["fbh1r",-0.144756378,-2.1544788,0.52572666],
+            ["fbh2r",-0.18826353,-2.1544788,0.4680077],
+            ["fbh3r",-0.19309461,-2.1544788,0.3302],
+            ["fbh4r",-0.185731404,-2.1544788,0.120162574],
+            ["fbh5r",-0.15324963,-2.1544788,0.0876808],
+            //front hoop brace
+            ["fhb1r",-0.182687214,-1.5113,0.5470144],
+            ["fhb2r",-0.242226084,-1.5113,0.46800262],
+            ["fhb3r",-0.247038368,-1.5113,0.3302],
+            ["fhb4r",-0.240844324,-1.5113,0.152830276],
+            ["fhb5r",-0.175695102,-1.5113,0.0876808],
+            //front hoop
+            ["fh1r",-0.095866712,-1.23825,0.6622288],
+            ["fh2r",-0.242226084,-1.23825,0.46800262],
+            ["fh3r",-0.247495822,-1.23825,0.3302],
+            ["fh4r",-0.241112548,-1.23825,0.14740636],
+            ["fh5r",-0.178324256,-1.23825,0.0876808],
+            //side impact structure front
+            ["sisf1r",-0.274648,-1.016,0.4318],
+            ["sisf2r",-0.2782316,-1.016,0.3302],
+            ["sisf3r",-0.27051762,-1.016,0.11146917],
+            ["sisf4r",-0.194134994,-1.016,0.0368808],
+            //side impact structure rear
+            ["sisr1r",-0.32509714,-0.6604,0.4318],
+            ["sisr2r",-0.32864552,-0.6604,0.3302],
+            ["sisr3r",-0.3184017,-0.6604,0.0368808],
+            //main hoop attachment front
+            ["mha1r",-0.26159714,-0.5207,0.4318],
+            ["mha2r",-0.26514552,-0.5207,0.3302],
+            ["mha3r",-0.25512014,-0.5207,0.043127676],
+            //accumulator protection front
+            ["apf1r",-0.237107222,-0.3937,0.5470144],
+            ["apf2r",-0.26159714,-0.3937,0.4318],
+            ["apf3r",-0.26514552,-0.3937,0.3302],
+            //accumulator protection rear
+            ["apr1r",-0.237689136,-0.06604,0.5470144],
+            ["apr2r",-0.26148284,-0.06604,0.43507406],
+            ["apr3r",-0.26514552,-0.06604,0.3302],
+            //rear bulkhead brace
+            ["rbhb1r",-0.26200862,-0.02794,0.4200144],
+            ["rbhb2r",-0.26514552,-0.02794,0.3302],
+            //rear bulkhead
+            ["rbh1r",-0.26200862,0.2032,0.4200144],
+            ["rbh2r",-0.26514552,0.2032,0.3302],
+            ["rbh3r",-0.25710896,0.2032,0.100099876],
+            
+
+        ],
+
+        "beams":[
+            ["id1:","id2:"],
+
+            // beams are grouped by SES panels, see IEM24 monocoqu ply tracker
+            
+            //SES-FBHS
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["fbh2l","fbh3l"],
+            ["fbh2l","fhb2l"],
+            ["fbh2l","fhb3l"],
+            ["fbh3l","fhb2l"],
+
+            ["fbh3l","fbh4l"],
+            ["fbh3l","fhb3l"],
+            ["fbh3l","fhb4l"],
+            ["fbh4l","fhb3l"],
+
+            ["fbh4l","fbh5l"],
+            ["fbh4l","fhb4l"],
+            ["fbh4l","fhb5l"],
+            ["fbh5l","fhb4l"],
+
+            ["fhb2l","fhb3l"],
+            ["fhb2l","fh2l"],
+            ["fhb2l","fh3l"],
+            ["fhb3l","fh2l"],
+
+            ["fhb3l","fhb4l"],
+            ["fhb3l","fh3l"],
+            ["fhb3l","fh4l"],
+            ["fhb4l","fh3l"],
+
+            ["fhb4l","fhb5l"],
+            ["fhb4l","fh4l"],
+            ["fhb4l","fh5l"],
+            ["fhb5l","fh4l"],
+
+            //right
+            ["fbh2r","fbh3r"],
+            ["fbh2r","fhb2r"],
+            ["fbh2r","fhb3r"],
+            ["fbh3r","fhb2r"],
+
+            ["fbh3r","fbh4r"],
+            ["fbh3r","fhb3r"],
+            ["fbh3r","fhb4r"],
+            ["fbh4r","fhb3r"],
+
+            ["fbh4r","fbh5r"],
+            ["fbh4r","fhb4r"],
+            ["fbh4r","fhb5r"],
+            ["fbh5r","fhb4r"],
+
+            ["fhb2r","fhb3r"],
+            ["fhb2r","fh2r"],
+            ["fhb2r","fh3r"],
+            ["fhb3r","fh2r"],
+
+            ["fhb3r","fhb4r"],
+            ["fhb3r","fh3r"],
+            ["fhb3r","fh4r"],
+            ["fhb4r","fh3r"],
+
+            ["fhb4r","fhb5r"],
+            ["fhb4r","fh4r"],
+            ["fhb4r","fh5r"],
+            ["fhb5r","fh4r"],
+            
+            //SES-FHB
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["fbh1l","fbh2l"],
+            ["fbh1l","fhb1l"],
+            ["fbh1l","fhb2l"],
+            ["fbh2l","fhb1l"],
+            ["fhb1l","fhb2l"],
+            ["fhb1l","fh1l"],
+            ["fhb1l","fh2l"],
+            ["fhb2l","fh1l"],
+            //right
+            ["fbh1r","fbh2r"],
+            ["fbh1r","fhb1r"],
+            ["fbh1r","fhb2r"],
+            ["fbh2r","fhb1r"],
+            ["fhb1r","fhb2r"],
+            ["fhb1r","fh1r"],
+            ["fhb1r","fh2r"],
+            ["fhb2r","fh1r"],
+            //top
+            ["fbh1l","fbh1r"],
+            ["fbh1l","fhb1r"],
+            ["fhb1l","fbh1r"],
+            ["fhb1l","fhb1r"],
+            ["fhb1l","fh1r"],
+            ["fhb1r","fh1l"],
+
+            
+            //SES-FH
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            ["fh1l","fh2l"],
+            ["fh2l","fh3l"],
+            ["fh3l","fh4l"],
+            ["fh4l","fh5l"],
+            ["fh1l","fh1r"],
+            ["fh5l","fh5r"],
+            ["fh1r","fh2r"],
+            ["fh2r","fh3r"],
+            ["fh3r","fh4r"],
+            ["fh4r","fh5r"],
+
+
+
+            //SES-UNREG
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["fh2l","sisf1l"],
+            ["sisf1l","sisr1l"],
+            ["fh1l","sisf1l"],
+            ["sisr1l","mha1l"],
+            //right
+            ["fh2r","sisf1r"],
+            ["sisf1r","sisr1r"],
+            ["fh1r","sisf1r"],
+            ["sisr1r","mha1r"],
+            //floor
+            ["fbh5r","fbh5l"],
+            ["fbh5r","fhb5l"],
+            ["fbh5l","fhb5r"],
+            ["fbh5r","fhb5r"],
+            ["fbh5l","fhb5l"],
+
+            ["fhb5r","fhb5l"],
+            ["fhb5r","fh5l"],
+            ["fhb5l","fh5r"],
+            ["fhb5r","fh5r"],
+            ["fhb5l","fh5l"],
+
+            ["fh5r","sisf4l"],
+            ["fh5l","sisf4r"],
+            ["fh5r","sisf4r"],
+            ["fh5l","sisf4l"],
+
+            ["sisf4r","sisf4l"],
+            ["sisf4r","sisr3l"],
+            ["sisf4l","sisr3r"],
+            ["sisf4r","sisr3r"],
+            ["sisf4l","sisr3l"],
+
+            ["sisr3r","sisr3l"],
+            ["sisr3r","mha3l"],
+            ["sisr3l","mha3r"],
+            ["sisr3r","mha3r"],
+            ["sisr3l","mha3l"],
+
+            ["mha3l","mha3r"],
+            ["mha3l","rbh3l"],
+            ["mha3r","rbh3r"],
+            ["mha3l","rbh3r"],
+            ["mha3r","rbh3l"],
+
+            //top
+            ["mha1l","mha1r"],
+            ["apf1r","apf1l"],
+            ["apr1r","apr1l"],
+            ["apr1r","apf1l"],
+            ["apr1l","apf1r"],
+
+
+            //SES-SIS
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["fh3l","sisf1l"],
+            ["fh2l","sisf2l"],
+            ["fh3l","sisf2l"],
+            ["fh3l","sisf3l"],
+            ["fh4l","sisf2l"],
+            ["fh4l","sisf3l"],
+            ["fh4l","sisf4l"],
+            ["fh5l","sisf3l"],
+
+            ["sisf1l","sisf2l"],
+            ["sisf1l","sisr2l"],
+            ["sisf2l","sisr1l"],
+
+            ["sisf2l","sisr2l"],
+            ["sisf2l","sisf3l"],
+            ["sisf2l","sisr3l"],
+            ["sisf3l","sisr2l"],
+
+            ["sisf3l","sisr3l"],
+            ["sisf3l","sisf4l"],
+
+            ["sisr1l","sisr2l"],
+            
+            ["sisr1l","mha2l"],
+            ["sisr2l","mha1l"],
+
+            ["sisr2l","sisr3l"],
+            ["sisr2l","mha2l"],
+            ["sisr2l","mha3l"],
+            ["sisr3l","mha2l"],
+
+            ["mha1l","mha2l"],
+            ["mha2l","mha3l"],
+            ["mha1l","apf1l"],
+            ["mha1l","apf2l"],
+            ["mha2l","apf2l"],
+            ["mha2l","apf3l"],
+            ["mha1l","apf3l"],
+            ["mha3l","apf3l"],
+            //right
+            ["fh3r","sisf1r"],
+            ["fh2r","sisf2r"],
+            ["fh3r","sisf2r"],
+            ["fh3r","sisf3r"],
+            ["fh4r","sisf2r"],
+            ["fh4r","sisf3r"],
+            ["fh4r","sisf4r"],
+            ["fh5r","sisf3r"],
+
+            ["sisf1r","sisf2r"],
+            ["sisf1r","sisr2r"],
+            ["sisf2r","sisr1r"],
+
+            ["sisf2r","sisr2r"],
+            ["sisf2r","sisf3r"],
+            ["sisf2r","sisr3r"],
+            ["sisf3r","sisr2r"],
+
+            ["sisf3r","sisr3r"],
+            ["sisf3r","sisf4r"],
+
+            ["sisr1r","sisr2r"],
+
+            ["sisr1r","mha2r"],
+            ["sisr2r","mha1r"],
+
+            ["sisr2r","sisr3r"],
+            ["sisr2r","mha2r"],
+            ["sisr2r","mha3r"],
+            ["sisr3r","mha2r"],
+
+            ["mha1r","mha2r"],
+            ["mha2r","mha3r"],
+            ["mha1r","apf1r"],
+            ["mha1r","apf2r"],
+            ["mha2r","apf2r"],
+            ["mha2r","apf3r"],
+            ["mha1r","apf3r"],
+            ["mha3r","apf3r"],
+
+            //SES-MHBS
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["apf1l","apr1l"],
+            ["apf1l","apr2l"],
+            ["apf1l","apf2l"],
+            ["apf2l","apr1l"],
+            ["apf2l","apr2l"],
+            ["apf2l","apf3l"],
+            ["apf3l","apr3l"],
+            ["apf2l","apr3l"],
+            ["apf3l","apr2l"],
+            //right
+            ["apf1r","apr1r"],
+            ["apf1r","apr2r"],
+            ["apf1r","apf2r"],
+            ["apf2r","apr1r"],
+            ["apf2r","apr2r"],
+            ["apf2r","apf3r"],
+            ["apf3r","apr3r"],
+            ["apf2r","apr3r"],
+            ["apf3r","apr2r"],
+            
+            //SES-ASP
+            {"beamSpring":6500000,"beamDamp":10},
+            {"beamStrength":100000000},
+            //left
+            ["apf3l","rbh3l"],
+            ["mha3l","rbh2l"]
+            ["apr1l","rbhb1l"],
+            ["apr2l","rbhb1l"],
+            ["apr2l","apr1l"],
+            ["apr2l","rbhb2l"],
+            ["apr3l","rbhb1l"],
+            ["apr2l","apr3l"],
+            ["apr3l","rbhb2l"],
+            ["rbhb1l","rbhb2l"],
+            ["rbhb1l","rbh1l"],
+            ["rbhb1l","rbh2l"],
+            ["rbhb2l","rbh1l"],
+            ["rbhb2l","rbh2l"],
+            //right
+            ["apf3r","rbh3r"],
+            ["mha3r","rbh2r"],
+            ["apr1r","rbhb1r"],
+            ["apr2r","rbhb1r"],
+            ["apr2r","apr1r"],
+            ["apr2r","rbhb2r"],
+            ["apr3r","rbhb1r"],
+            ["apr2r","apr3r"],
+            ["apr3r","rbhb2r"],
+            ["rbhb1r","rbhb2r"],
+            ["rbhb1r","rbh1r"],
+            ["rbhb1r","rbh2r"],
+            ["rbhb2r","rbh1r"],
+            ["rbhb2r","rbh2r"],
+            //top
+            ["rbhb1l","rbhb1r"],
+            ["rbhb1l","rbh1r"],
+            ["rbhb1r","rbh1l"],
+            ["apr1l","rbhb1r"],
+            ["apr1r","rbhb1l"],
+
+            //SES-RBH
+            ["rbh1l","rbh2l"],
+            ["rbh2l","rbh3l"],
+            ["rbh1l","rbh1r"],
+            ["rbh3l","rbh3r"]
+            ["rbh1r","rbh2r"],
+            ["rbh2r","rbh3r"],
+
+
+
+
+
+        ]
+    }
+}
